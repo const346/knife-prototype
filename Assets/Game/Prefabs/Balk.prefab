@@ -108,8 +108,8 @@ MonoBehaviour:
   leftBody: {fileID: 2278341978453078787}
   rightBody: {fileID: 2278341977914251831}
   trigger: {fileID: 2278341977256196013}
-  rightForce: {x: 0, y: -10, z: 40}
-  leftForce: {x: 0, y: -10, z: -40}
+  rightForce: {x: 0, y: -5, z: 40}
+  leftForce: {x: 0, y: -5, z: -40}
 --- !u!1 &2278341977914251829
 GameObject:
   m_ObjectHideFlags: 0
@@ -128,7 +128,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &2278341977914251828
 Transform:
@@ -242,7 +242,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &2278341978453078784
 Transform:

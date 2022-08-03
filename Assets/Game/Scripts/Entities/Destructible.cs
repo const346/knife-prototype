@@ -19,18 +19,26 @@ public class Destructible : MonoBehaviour
     [SerializeField]
     private Vector3 leftForce = Vector3.back * 40;
 
-    public void Destruct()
+    public void Destruct(float knifeDepth)
     {
         if (leftBody)
         {
             leftBody.isKinematic = false;
-            leftBody.AddForce(leftForce);
+
+            var point = leftBody.transform.position;
+            point.z = knifeDepth;
+
+            leftBody.AddForceAtPosition(leftForce, point);
         }
 
         if (rightBody)
         {
             rightBody.isKinematic = false;
-            rightBody.AddForce(rightForce);
+
+            var point = rightBody.transform.position;
+            point.z = knifeDepth;
+
+            rightBody.AddForceAtPosition(rightForce, point);
         }
 
         trigger.enabled = false;
